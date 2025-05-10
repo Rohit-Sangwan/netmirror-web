@@ -60,7 +60,7 @@ A modern, responsive movie streaming application built with React, TypeScript, a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/netmirror.git
+   git clone https://github.com/Rohit-Sangwan/netmirror-web.git
    cd netmirror
    ```
 
@@ -160,5 +160,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-Project Link: [https://github.com/yourusername/netmirror](https://github.com/yourusername/netmirror) 
+Your Name - [@yourtwitter](https://twitter.com/Rohit__Sangwan)
+Project Link: [https://github.com/Rohit-Sangwan/netmirror-web](https://github.com/Rohit-Sangwan/netmirror-web)
