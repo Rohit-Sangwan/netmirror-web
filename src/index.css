@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
+  }
+  
+  body {
+    @apply bg-background text-on-background min-h-screen;
+    font-family: 'Roboto', system-ui, sans-serif;
+    overscroll-behavior-y: contain;
+  }
+
+  /* Material Design Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background-light;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#2D2D2D] rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#3D3D3D];
+  }
+
+  /* Material Design Selection */
+  ::selection {
+    @apply bg-primary/20 text-on-background;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-on-primary font-medium py-2.5 px-6 rounded-xl active:opacity-70 transition-opacity;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-on-secondary font-medium py-2.5 px-6 rounded-xl active:opacity-70 transition-opacity;
+  }
+
+  .input-primary {
+    @apply w-full px-4 py-3 rounded-xl bg-background-light text-on-surface placeholder-[#9E9E9E] focus:outline-none focus:ring-2 focus:ring-primary transition-all;
+  }
+
+  /* Material Design Card */
+  .card {
+    @apply bg-background-light rounded-xl overflow-hidden shadow-lg active:scale-[0.98] transition-transform;
+  }
+
+  /* Material Design List Item */
+  .list-item {
+    @apply flex items-center px-4 py-3 active:bg-[#2D2D2D] transition-colors;
+  }
+
+  /* Material Design Divider */
+  .divider {
+    @apply h-px bg-[#2D2D2D] my-2;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Material Design Elevation */
+  .elevation-1 {
+    @apply shadow-[0_2px_1px_-1px_rgba(0,0,0,0.2),0_1px_1px_0_rgba(0,0,0,0.14),0_1px_3px_0_rgba(0,0,0,0.12)];
+  }
+
+  .elevation-2 {
+    @apply shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),0_2px_2px_0_rgba(0,0,0,0.14),0_1px_5px_0_rgba(0,0,0,0.12)];
+  }
+
+  .elevation-4 {
+    @apply shadow-[0_2px_4px_-1px_rgba(0,0,0,0.2),0_4px_5px_0_rgba(0,0,0,0.14),0_1px_10px_0_rgba(0,0,0,0.12)];
+  }
+} 
