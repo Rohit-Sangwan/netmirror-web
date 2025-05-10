@@ -160,5 +160,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/Rohit__Sangwan)
+Your Name - [@Rohit__Sangwan](https://twitter.com/Rohit__Sangwan)
 Project Link: [https://github.com/Rohit-Sangwan/netmirror-web](https://github.com/Rohit-Sangwan/netmirror-web)
